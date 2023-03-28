@@ -1,0 +1,254 @@
+<html>
+    <head>
+        <title>Curso de CSS3 Avancado</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+           
+           body {
+                margin: 0;
+            }
+            
+            nav {
+                position: fixed;
+                width: 100%;
+                background-color: rgba(0,0,0,0.2);
+            }  
+            
+            nav img {
+                position: absolute;
+                left:10px;top:10px;
+                z-index: 1;
+            }
+            
+            nav ul#menu-desktop {
+                margin:0;
+                padding:0;
+                text-align: right;
+            }
+
+            nav ul#menu-desktop li {
+                list-style-type:none;
+                display: inline;
+            }
+
+            nav ul#menu-desktop li a {
+                padding: 30px 40px;
+                text-decoration: none;
+                
+                color:#FFF;
+                display: inline-block;
+                margin-right: -3px;
+                font-family: Roboto, sans-serif;
+                font-size: 80%;
+                letter-spacing: 0.60
+            }
+
+            nav ul#menu-desktop li a:hover {
+                background-color: rgba(213,26,44,1);
+            }
+        
+            header {
+                width: 100%;
+                height: 600px;
+                margin: 0 auto;
+            }
+            
+            header img {
+                width:  100%;
+                height: 100%;
+                
+                object-fit: cover;
+                object-position: top center
+            }    
+
+.box{
+    background-color: black;
+    width: 1190px;
+    height: 200px;
+}
+
+        
+            body {
+                margin:0;
+                font-family: sans-serif;
+                background: #ffffff;
+            }
+        
+            header {
+                width: 100%;
+                height: 600px;
+                margin: 0 auto 0;
+            }
+            
+            header img {
+                width: 100%;
+                height: 100%;
+                
+                object-fit: cover;
+                object-position: top center
+            }   
+            
+            main {
+                margin:0;
+                width: 100%;
+                height: 1000px;
+                background: #ffffff;
+            }
+            
+main section#apresentacao {
+    width: 90%;
+    max-width: 1500px;
+    min-width: 320px;
+    margin: 100px auto;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+
+
+
+}
+ main section.pizzas{
+    width: 30%;
+    float: left;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #666;
+    border-radius: 5px;
+
+ }
+main section.direita{
+    float: right;
+}
+main section.centro{
+    margin-left: 5%;
+}
+
+main section.pizzas img{
+
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+ main section.pizzas h3 {
+    text-align: center;
+    margin-bottom: 0;
+
+ }
+ main section.pizzas p {
+    text-align: center;
+    padding: 5%;
+    margin-top: 1%;
+
+}
+main section.pizzas a {
+    display: block;
+    text-align: center;
+    background-color: rgb(231, 21, 136);
+    color: white;
+    padding: 3%;
+    text-decoration: none;
+    
+}
+
+            /* para mobile */
+            @media only screen and (min-width:280px) and (max-width:414px) {
+                header {
+                    height: 320px;   
+                }
+            
+            }
+         
+           
+
+            
+            /* desktop grande */
+            @media only screen and (min-width:1367px) and (max-width:1980px) {
+                header {
+                    height: 800px;   
+                }
+            }
+            
+            /* desktop gigante */
+            @media only screen and (min-width:1981px) and (max-width:2880px) {
+                header {
+                    height: 1000px;   
+                }
+            }          
+        
+        </style>
+    </head>
+    <body>
+
+        <nav>
+            <img src="_img/logo-pizzaria-grande.png">
+            <ul id="menu-desktop">
+                <li><a href="">PIZZAS</a></li>
+                <li><a href="">MEUS PEDIDOS</a></li>
+                <li><a href="">CONTATO</a></li>
+                <li><a href="">LOGIN</a></li>
+            </ul>        
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <header>
+            <img src="comendo.jpg">
+        </header>
+        
+        <main>
+
+      <section id="apresentacao">
+
+        <section class="pizzas">
+<img src="_img/pizza1.jpg">
+
+          <h3>Marguerita</h3>
+          <p>Descrição</p>
+          <a href="">RS 39,90</a>
+
+        </section>
+
+        <section class="pizzas centro">
+            <img src="_img/pizza2.jpg">
+            <h3>Calabresa</h3>
+          <p>Descrição</p>
+          <a href="">RS 39,90</a>
+        </section>
+
+        <section class="pizzas direita">
+            <img src="_img/pizza3.jpg">
+            <h3>Brasileira</h3>
+          <p>Descrição</p>
+          <a href="">RS 39,90</a>
+        </section>
+
+
+      </section>
+
+
+        </main>
+
+
+<div class="container">
+
+<div class="box"></div>
+
+</div>
+
+
+
+
+
+
+    </body>
+</html>
